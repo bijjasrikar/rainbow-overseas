@@ -78,14 +78,14 @@ function Home() {
       <section className="hero">
         <div className="container hero-container">
           <div className="hero-content animate-fade-in-up">
-            <p className="hero-tag">🌍 Trusted by 5000+ Students</p>
+            <p className="hero-tag">🌍 Trusted by 1000+ Students</p>
             <h1>Your Trusted Partner for <span className="text-gradient">Study Abroad, Travel, Visa & More</span></h1>
             <p>From university selection to visa approval, holiday packages to car rentals — Rainbow Overseas is your one-stop destination for all international services.</p>
             <div className="hero-stats">
-              <div className="stat"><strong>5000+</strong><span>Students Placed</span></div>
+              <div className="stat"><strong>1000+</strong><span>Students Placed</span></div>
               <div className="stat"><strong>98%</strong><span>Visa Success</span></div>
               <div className="stat"><strong>6+</strong><span>Countries</span></div>
-              <div className="stat"><strong>15+</strong><span>Years Experience</span></div>
+              <div className="stat"><strong>10+</strong><span>Years Experience</span></div>
             </div>
           </div>
           <div className="hero-form animate-fade-in-down">
@@ -134,7 +134,7 @@ function Home() {
             <p className="section-tag">WHO WE ARE</p>
             <h2>Rainbow Overseas — Your Lifelong Education & Travel Partner</h2>
             <p>At Rainbow Overseas, we believe every student deserves expert, honest, and personalised guidance. We don't push popular destinations or fixed packages — we take the time to understand your goals, budget, and preferences, then recommend options that truly fit.</p>
-            <p style={{marginTop:'1rem'}}>With 15+ years of experience and a 98% visa success rate, we've helped over 5,000 students build successful international careers. Beyond education, we offer premium travel, forex, car rental, and insurance services under one roof.</p>
+            <p>With 10+ years of experience and a 98% visa success rate, we've helped over 1000+ students build successful international careers. Beyond education, we offer premium travel, forex, car rental, and insurance services under one roof.</p>
             <div className="about-features">
               <div className="feature-item">✅ End-to-End Support</div>
               <div className="feature-item">✅ Expert Counsellors</div>
