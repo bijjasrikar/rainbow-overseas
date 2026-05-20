@@ -31,10 +31,10 @@ function Navbar() {
             <li><NavLink to="/" end onClick={() => setMenuOpen(false)}>Home</NavLink></li>
             <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About Us</NavLink></li>
             <li><NavLink to="/abroad-education" onClick={() => setMenuOpen(false)}>Study Abroad</NavLink></li>
-            <li><NavLink to="/visa-services" onClick={() => setMenuOpen(false)}>Visa</NavLink></li>
+            <li><NavLink to="/finance" onClick={() => setMenuOpen(false)}>Finance</NavLink></li>
+            <li><NavLink to="/tan" onClick={() => setMenuOpen(false)}>TAN</NavLink></li>
+            <li><NavLink to="/fage" onClick={() => setMenuOpen(false)}>Fage</NavLink></li>
             <li><NavLink to="/travel-holidays" onClick={() => setMenuOpen(false)}>Travel</NavLink></li>
-            <li><NavLink to="/car-rentals" onClick={() => setMenuOpen(false)}>Cars</NavLink></li>
-            <li><NavLink to="/forex-services" onClick={() => setMenuOpen(false)}>Forex</NavLink></li>
             <li><NavLink to="/insurance" onClick={() => setMenuOpen(false)}>Insurance</NavLink></li>
             <li><NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink></li>
           </ul>
