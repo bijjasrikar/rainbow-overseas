@@ -270,6 +270,27 @@
   color: #16a34a;
 }
 
+.enquiry-form.detailed {
+  width: 100%;
+  max-width: 800px;
+}
+
+.detailed-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.detailed-form-grid .full-width {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+  .detailed-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ========== FOREX RATES STRIP ========== */
 .rates-strip {
   background: white;
