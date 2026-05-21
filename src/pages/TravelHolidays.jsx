@@ -97,46 +97,76 @@ function TravelHolidays() {
                 <a href="mailto:bijjasrikar25@gmail.com">✉️ bijjasrikar25@gmail.com</a>
               </div>
             </div>
-                        <form className="enquiry-form detailed" onSubmit={handleSubmit}>
+            <form className="enquiry-form detailed" onSubmit={handleSubmit}>
               <h3>Travel Enquiry</h3>
               <div className="detailed-form-grid">
                 <input type="text" placeholder="Full Name" required value={form.fullName} onChange={e => setForm({ ...form, fullName: e.target.value })} />
                 <input type="tel" placeholder="Mobile Number" required value={form.mobile} onChange={e => setForm({ ...form, mobile: e.target.value })} />
-                <input type="text" placeholder="WhatsApp Number" value={form.whatsapp} onChange={e => setForm({ ...form, whatsapp: e.target.value })} />
+                <input type="text" placeholder="WhatsApp Number" required value={form.whatsapp} onChange={e => setForm({ ...form, whatsapp: e.target.value })} />
                 <input type="email" placeholder="Email Address" required value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
-                <input type="text" placeholder="Living City" value={form.city} onChange={e => setForm({ ...form, city: e.target.value })} />
-                <input type="text" placeholder="Type of Travel" value={form.travelType} onChange={e => setForm({ ...form, travelType: e.target.value })} />
-                <input type="text" placeholder="Travel Purpose" value={form.travelPurpose} onChange={e => setForm({ ...form, travelPurpose: e.target.value })} />
-                <input type="text" placeholder="Destination" value={form.destination} onChange={e => setForm({ ...form, destination: e.target.value })} />
-                <input type="text" placeholder="Departure City" value={form.departureCity} onChange={e => setForm({ ...form, departureCity: e.target.value })} />
-                <input type="date" placeholder="Travel Start Date" value={form.startDate} onChange={e => setForm({ ...form, startDate: e.target.value })} />
-                <input type="date" placeholder="Travel End Date" value={form.endDate} onChange={e => setForm({ ...form, endDate: e.target.value })} />
-                <input type="number" placeholder="Number of Adults" value={form.adults} onChange={e => setForm({ ...form, adults: e.target.value })} />
+                <input type="text" placeholder="Living City" required value={form.city} onChange={e => setForm({ ...form, city: e.target.value })} />
+                <input type="text" placeholder="Type of Travel" required value={form.travelType} onChange={e => setForm({ ...form, travelType: e.target.value })} />
+                <select required value={form.travelPurpose} onChange={e => setForm({ ...form, travelPurpose: e.target.value })}>
+                  <option value="" disabled>Travel Purpose</option>
+                  <option>Leisure / Holiday</option>
+                  <option>Honeymoon</option>
+                  <option>Family Trip</option>
+                  <option>Group Tour</option>
+                  <option>Business Trip</option>
+                </select>
+                <input type="text" placeholder="Destination" required value={form.destination} onChange={e => setForm({ ...form, destination: e.target.value })} />
+                <input type="text" placeholder="Departure City" required value={form.departureCity} onChange={e => setForm({ ...form, departureCity: e.target.value })} />
+                <input type="date" placeholder="Travel Start Date" required value={form.startDate} onChange={e => setForm({ ...form, startDate: e.target.value })} />
+                <input type="date" placeholder="Travel End Date" required value={form.endDate} onChange={e => setForm({ ...form, endDate: e.target.value })} />
+                <input type="number" placeholder="Number of Adults" required value={form.adults} onChange={e => setForm({ ...form, adults: e.target.value })} />
                 <input type="number" placeholder="Number of Children" value={form.children} onChange={e => setForm({ ...form, children: e.target.value })} />
                 <input type="number" placeholder="Number of Infants (Below 2 yrs)" value={form.infants} onChange={e => setForm({ ...form, infants: e.target.value })} />
-                <input type="text" placeholder="Hotel Category Preference" value={form.hotelPref} onChange={e => setForm({ ...form, hotelPref: e.target.value })} />
-                <input type="text" placeholder="Meal Plan" value={form.mealPlan} onChange={e => setForm({ ...form, mealPlan: e.target.value })} />
-                <input type="text" placeholder="Food Preference (Veg / Non-Veg)" value={form.foodPref} onChange={e => setForm({ ...form, foodPref: e.target.value })} />
-                <input type="text" placeholder="Transport Required?" value={form.transportRequired} onChange={e => setForm({ ...form, transportRequired: e.target.value })} />
+                <input type="text" placeholder="Hotel Category Preference" required value={form.hotelPref} onChange={e => setForm({ ...form, hotelPref: e.target.value })} />
+                <select required value={form.mealPlan} onChange={e => setForm({ ...form, mealPlan: e.target.value })}>
+                  <option value="" disabled>Meal Plan</option>
+                  <option>Breakfast Only</option>
+                  <option>Half Board (Breakfast + Dinner)</option>
+                  <option>Full Board</option>
+                  <option>No Meals</option>
+                </select>
+                <select required value={form.foodPref} onChange={e => setForm({ ...form, foodPref: e.target.value })}>
+                  <option value="" disabled>Food Preference</option>
+                  <option>Veg</option>
+                  <option>Non-Veg</option>
+                  <option>Both</option>
+                  <option>Jain Food</option>
+                </select>
+                <select required value={form.transportRequired} onChange={e => setForm({ ...form, transportRequired: e.target.value })}>
+                  <option value="" disabled>Transport Required?</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
                 <input type="text" placeholder="Transport Type" value={form.transportType} onChange={e => setForm({ ...form, transportType: e.target.value })} />
                 <input type="text" placeholder="Budget Per Person" value={form.budgetPerPerson} onChange={e => setForm({ ...form, budgetPerPerson: e.target.value })} />
-                <input type="text" placeholder="Passport Available?" value={form.passportAvailable} onChange={e => setForm({ ...form, passportAvailable: e.target.value })} />
-                <input type="text" placeholder="Visa Required?" value={form.visaRequired} onChange={e => setForm({ ...form, visaRequired: e.target.value })} />
+                <select required value={form.passportAvailable} onChange={e => setForm({ ...form, passportAvailable: e.target.value })}>
+                  <option value="" disabled>Passport Available?</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                  <option>Not Sure</option>
+                </select>
+                <select required value={form.visaRequired} onChange={e => setForm({ ...form, visaRequired: e.target.value })}>
+                  <option value="" disabled>Visa Required?</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                  <option>Not Sure</option>
+                </select>
                 <textarea placeholder="Special Requests / Notes" rows="3" value={form.specialNotes} onChange={e => setForm({ ...form, specialNotes: e.target.value })} style={{padding:'0.85rem',border:'1.5px solid #e2e8f0',borderRadius:'0.5rem',fontFamily:'inherit',resize:'vertical'}}></textarea>
-                <input type="text" placeholder="How did you hear about us?" value={form.referral} onChange={e => setForm({ ...form, referral: e.target.value })} />
+                <select required value={form.referral} onChange={e => setForm({ ...form, referral: e.target.value })}>
+                  <option value="" disabled>How did you hear about us?</option>
+                  <option>Google</option>
+                  <option>Instagram</option>
+                  <option>Facebook</option>
+                  <option>WhatsApp</option>
+                  <option>Reference</option>
+                  <option>Other</option>
+                </select>
                 <input type="text" placeholder="Untitled Question" value={form.untitled} onChange={e => setForm({ ...form, untitled: e.target.value })} />
               </div>
-              <button type="submit" className="btn btn-dark" style={{width:'100%'}}>Send Enquiry →</button>
-              {status && <p className="form-status">{status}</p>}
-            </form>
-              <h3>Holiday Enquiry</h3>
-              <input type="text" placeholder="Full Name" required value={form.name} onChange={e => setForm({...form, name: e.target.value})} />
-              <input type="tel" placeholder="Mobile Number" required value={form.mobile} onChange={e => setForm({...form, mobile: e.target.value})} />
-              <input type="text" placeholder="Destination" value={form.destination} onChange={e => setForm({...form, destination: e.target.value})} />
-              <input type="date" placeholder="Travel Date" value={form.travelDate} onChange={e => setForm({...form, travelDate: e.target.value})} />
-              <input type="number" placeholder="Number of Travellers" value={form.travellers} onChange={e => setForm({...form, travellers: e.target.value})} />
-              <input type="text" placeholder="Budget (e.g. ₹50,000)" value={form.budget} onChange={e => setForm({...form, budget: e.target.value})} />
-              <textarea placeholder="Special Requirements" rows="3" value={form.requirements} onChange={e => setForm({...form, requirements: e.target.value})} style={{padding:'0.85rem',border:'1.5px solid #e2e8f0',borderRadius:'0.5rem',fontFamily:'inherit',resize:'vertical'}}></textarea>
               <button type="submit" className="btn btn-dark" style={{width:'100%'}}>Send Enquiry →</button>
               {status && <p className="form-status">{status}</p>}
             </form>
