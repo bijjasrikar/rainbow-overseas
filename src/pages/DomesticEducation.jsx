@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
+import React from 'react';
 import { FaUniversity, FaUserGraduate, FaClipboardList, FaFileAlt, FaMoneyBillWave } from 'react-icons/fa';
 import './ServicePage.css';
 
@@ -12,23 +11,6 @@ const services = [
 ];
 
 function DomesticEducation() {
-  const [form, setForm] = useState({
-    name: '', mobile: '', whatsapp: '', email: '', highestQualification: '',
-    course: '', statePreference: '', startStudies: '', loanSupport: '', budgetRange: '',
-    preferredContact: '', message: ''
-  });
-  const [status, setStatus] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setStatus('Sending...');
-    const serviceID = 'YOUR_SERVICE_ID';
-    const templateID = 'YOUR_TEMPLATE_ID';
-    const publicKey = 'YOUR_PUBLIC_KEY';
-    emailjs.send(serviceID, templateID, { ...form, to_email: 'bijjasrikar25@gmail.com', reply_to: 'midn531@gmail.com', service_requested: 'Domestic Education Services' }, publicKey)
-      .then(() => { setStatus('✅ Enquiry sent! We will contact you shortly.'); setTimeout(() => setStatus(''), 4000); })
-      .catch(() => { setStatus('❌ Failed. Please call us.'); setTimeout(() => setStatus(''), 4000); });
-  };
 
   return (
     <div className="service-page">
@@ -74,47 +56,9 @@ function DomesticEducation() {
                 <a href="mailto:bijjasrikar25@gmail.com">✉️ bijjasrikar25@gmail.com</a>
               </div>
             </div>
-            <form className="enquiry-form detailed" onSubmit={handleSubmit}>
-              <h3 className="full-width" style={{marginBottom: '1rem'}}>Detailed Education Enquiry</h3>
-              <div className="detailed-form-grid">
-                <input type="text" placeholder="Full Name *" required value={form.name} onChange={e => setForm({...form, name: e.target.value})} />
-                <input type="tel" placeholder="Mobile Number *" required value={form.mobile} onChange={e => setForm({...form, mobile: e.target.value})} />
-                <input type="tel" placeholder="WhatsApp Number" value={form.whatsapp} onChange={e => setForm({...form, whatsapp: e.target.value})} />
-                <input type="email" placeholder="Email ID *" required value={form.email} onChange={e => setForm({...form, email: e.target.value})} />
-                
-                <select value={form.highestQualification} onChange={e => setForm({...form, highestQualification: e.target.value})}>
-                  <option value="">Highest Qualification *</option>
-                  {['10th / SSC', '12th / Intermediate', 'Diploma', 'Bachelors', 'Masters'].map(q => <option key={q} value={q}>{q}</option>)}
-                </select>
-
-                <select value={form.course} onChange={e => setForm({...form, course: e.target.value})}>
-                  <option value="">Course Interested *</option>
-                  {['B.Tech','M.Tech','MBA','BBA','BCA','MCA','Medical','Nursing','Pharmacy','Other'].map(c => <option key={c} value={c}>{c}</option>)}
-                </select>
-                
-                <input type="text" placeholder="Preferred State/City" value={form.statePreference} onChange={e => setForm({...form, statePreference: e.target.value})} />
-                <input type="text" placeholder="When are you planning to start?" value={form.startStudies} onChange={e => setForm({...form, startStudies: e.target.value})} />
-
-                <select value={form.loanSupport} onChange={e => setForm({...form, loanSupport: e.target.value})}>
-                  <option value="">Need education loan support?</option>
-                  {['Yes', 'No'].map(c => <option key={c} value={c}>{c}</option>)}
-                </select>
-                <select value={form.budgetRange} onChange={e => setForm({...form, budgetRange: e.target.value})}>
-                  <option value="">Budget Range (Per Year)</option>
-                  {['Less than ₹5 Lakhs', '₹5 - ₹10 Lakhs', '₹10 - ₹15 Lakhs', 'More than ₹15 Lakhs'].map(c => <option key={c} value={c}>{c}</option>)}
-                </select>
-
-                <select value={form.preferredContact} onChange={e => setForm({...form, preferredContact: e.target.value})}>
-                  <option value="">Preferred mode of contact</option>
-                  {['Phone Call', 'WhatsApp', 'Email'].map(c => <option key={c} value={c}>{c}</option>)}
-                </select>
-
-                <textarea className="full-width" rows="3" placeholder="Any Queries / Message" value={form.message} onChange={e => setForm({...form, message: e.target.value})} />
-
-                <button type="submit" className="btn btn-dark full-width">Send Detailed Enquiry →</button>
-                {status && <p className="form-status full-width">{status}</p>}
-              </div>
-            </form>
+            <div className="enquiry-form-wrapper" style={{width: '100%', background: 'white', padding: '1rem', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)'}}>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLhjSSKdHsCrN6jl8Uelbu3aytswLSsfZAPaXqitBnW0EA-A/viewform?embedded=true" width="100%" height="800" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+            </div>
           </div>
         </div>
       </section>
