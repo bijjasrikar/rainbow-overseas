@@ -1,14 +1,14 @@
 import React from 'react';
-import { FaUser, FaBriefcase, FaCreditCard, FaCar, FaHome, FaChartLine } from 'react-icons/fa';
+import { FcBusinessman, FcBriefcase, FcMoneyTransfer, FcAutomotive, FcHome, FcLineChart } from 'react-icons/fc';
 import './ServicePage.css';
 
 const financeServices = [
-  { icon: <FaUser />, title: 'Personal Loans', desc: 'Fast approval loans for education, travel, medical needs, and personal emergencies, with flexible repayment terms.' },
-  { icon: <FaBriefcase />, title: 'Business Loans', desc: 'Capital solutions for startups and growing businesses, including working capital, expansion, and equipment finance.' },
-  { icon: <FaCreditCard />, title: 'Credit Cards', desc: 'A range of credit cards for travel, shopping, rewards, and low-interest use to suit every lifestyle.' },
-  { icon: <FaCar />, title: 'Car Loans', desc: 'Affordable auto finance for new and used cars with competitive interest rates and easy EMI plans.' },
-  { icon: <FaHome />, title: 'Home Loans', desc: 'Home purchase and home improvement loans with attractive rates, long tenures, and simple documentation.' },
-  { icon: <FaChartLine />, title: 'Mutual Funds', desc: 'Investment planning through mutual funds to help you build wealth, save tax, and achieve long-term financial goals.' },
+  { icon: <FcBusinessman />, title: 'Personal Loans', desc: 'Fast approval loans for education, travel, medical needs, and personal emergencies, with flexible repayment terms.' },
+  { icon: <FcBriefcase />, title: 'Business Loans', desc: 'Capital solutions for startups and growing businesses, including working capital, expansion, and equipment finance.' },
+  { icon: <FcMoneyTransfer />, title: 'Credit Cards', desc: 'A range of credit cards for travel, shopping, rewards, and low-interest use to suit every lifestyle.' },
+  { icon: <FcAutomotive />, title: 'Car Loans', desc: 'Affordable auto finance for new and used cars with competitive interest rates and easy EMI plans.' },
+  { icon: <FcHome />, title: 'Home Loans', desc: 'Home purchase and home improvement loans with attractive rates, long tenures, and simple documentation.' },
+  { icon: <FcLineChart />, title: 'Mutual Funds', desc: 'Investment planning through mutual funds to help you build wealth, save tax, and achieve long-term financial goals.' },
 ];
 
 function Finance() {

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { FaUniversity, FaUserGraduate, FaClipboardList, FaFileAlt, FaMoneyBillWave } from 'react-icons/fa';
+import { FcLibrary, FcGraduationCap, FcTodoList, FcDocument, FcMoneyTransfer } from 'react-icons/fc';
 import './ServicePage.css';
 
 const services = [
-  { icon: <FaUserGraduate />, title: 'Free Counselling', desc: 'Personalised one-on-one counselling sessions to identify your ideal course and university in India based on your profile.' },
-  { icon: <FaClipboardList />, title: 'University Shortlisting', desc: 'Expert-backed shortlisting of domestic universities matched to your academic profile, budget, and career goals.' },
-  { icon: <FaFileAlt />, title: 'Application Assistance', desc: 'Complete assistance in filling and submitting university applications with 100% accuracy.' },
-  { icon: <FaMoneyBillWave />, title: 'Scholarship & Loan Guidance', desc: 'Identify and apply for merit scholarships and education loans to reduce your financial burden.' },
-  { icon: <FaUniversity />, title: 'Entrance Exam Support', desc: 'Guidance and preparation tips for various national and state-level entrance examinations.' },
+  { icon: <FcGraduationCap />, title: 'Free Counselling', desc: 'Personalised one-on-one counselling sessions to identify your ideal course and university in India based on your profile.' },
+  { icon: <FcTodoList />, title: 'University Shortlisting', desc: 'Expert-backed shortlisting of domestic universities matched to your academic profile, budget, and career goals.' },
+  { icon: <FcDocument />, title: 'Application Assistance', desc: 'Complete assistance in filling and submitting university applications with 100% accuracy.' },
+  { icon: <FcMoneyTransfer />, title: 'Scholarship & Loan Guidance', desc: 'Identify and apply for merit scholarships and education loans to reduce your financial burden.' },
+  { icon: <FcLibrary />, title: 'Entrance Exam Support', desc: 'Guidance and preparation tips for various national and state-level entrance examinations.' },
 ];
 
 function DomesticEducation() {

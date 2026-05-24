@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { FaUniversity, FaGlobe, FaUserGraduate, FaClipboardList, FaFileAlt, FaPassport, FaMoneyBillWave } from 'react-icons/fa';
+import { FcLibrary, FcGlobe, FcGraduationCap, FcTodoList, FcDocument, FcAddressBook, FcMoneyTransfer } from 'react-icons/fc';
 import './ServicePage.css';
 
 const countries = [
@@ -13,12 +13,12 @@ const countries = [
 ];
 
 const services = [
-  { icon: <FaUserGraduate />, title: 'Free Counselling', desc: 'Personalised one-on-one counselling sessions to identify your ideal course, country, and university based on your profile.' },
-  { icon: <FaClipboardList />, title: 'University Shortlisting', desc: 'Expert-backed shortlisting of universities matched to your academic profile, budget, and career goals.' },
-  { icon: <FaFileAlt />, title: 'SOP & LOR Assistance', desc: 'Professional Statement of Purpose and Letter of Recommendation drafting by experienced writers.' },
-  { icon: <FaPassport />, title: 'Application Filing', desc: 'Complete assistance in filling and submitting university applications with 100% accuracy.' },
-  { icon: <FaMoneyBillWave />, title: 'Scholarship Guidance', desc: 'Identify and apply for merit and country-specific scholarships to reduce your financial burden.' },
-  { icon: <FaGlobe />, title: 'Visa Assistance', desc: 'Complete student visa documentation, filing, and interview preparation with our 98% success rate.' },
+  { icon: <FcGraduationCap />, title: 'Free Counselling', desc: 'Personalised one-on-one counselling sessions to identify your ideal course, country, and university based on your profile.' },
+  { icon: <FcTodoList />, title: 'University Shortlisting', desc: 'Expert-backed shortlisting of universities matched to your academic profile, budget, and career goals.' },
+  { icon: <FcDocument />, title: 'SOP & LOR Assistance', desc: 'Professional Statement of Purpose and Letter of Recommendation drafting by experienced writers.' },
+  { icon: <FcAddressBook />, title: 'Application Filing', desc: 'Complete assistance in filling and submitting university applications with 100% accuracy.' },
+  { icon: <FcMoneyTransfer />, title: 'Scholarship Guidance', desc: 'Identify and apply for merit and country-specific scholarships to reduce your financial burden.' },
+  { icon: <FcGlobe />, title: 'Visa Assistance', desc: 'Complete student visa documentation, filing, and interview preparation with our 98% success rate.' },
 ];
 
 function AbroadEducation() {
@@ -64,7 +64,7 @@ function AbroadEducation() {
           <h2 className="section-title">Study Abroad Services</h2>
           <div className="service-cards-grid">
             <div className="svc-card">
-              <div className="svc-icon"><FaGlobe /></div>
+              <div className="svc-icon"><FcGlobe /></div>
               <h4>Study Abroad</h4>
               <p>End-to-end support for international admissions, applications, visas, travel planning, and post-arrival assistance.</p>
             </div>
