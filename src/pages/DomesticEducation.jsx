@@ -1,13 +1,58 @@
 import React, { useState } from 'react';
-import { FcLibrary, FcGraduationCap, FcTodoList, FcDocument, FcMoneyTransfer } from 'react-icons/fc';
+import {
+  FcLibrary,
+  FcGraduationCap,
+  FcTodoList,
+  FcMoneyTransfer,
+  FcReadingEbook,
+  FcDiploma1,
+  FcBriefcase,
+} from 'react-icons/fc';
 import './ServicePage.css';
 
-const services = [
-  { icon: <FcGraduationCap />, title: 'Free Counselling', desc: 'Personalised one-on-one counselling sessions to identify your ideal course and university in India based on your profile.' },
-  { icon: <FcTodoList />, title: 'University Shortlisting', desc: 'Expert-backed shortlisting of domestic universities matched to your academic profile, budget, and career goals.' },
-  { icon: <FcDocument />, title: 'Application Assistance', desc: 'Complete assistance in filling and submitting university applications with 100% accuracy.' },
-  { icon: <FcMoneyTransfer />, title: 'Scholarship & Loan Guidance', desc: 'Identify and apply for merit scholarships and education loans to reduce your financial burden.' },
-  { icon: <FcLibrary />, title: 'Entrance Exam Support', desc: 'Guidance and preparation tips for various national and state-level entrance examinations.' },
+const domesticServices = [
+  {
+    icon: <FcTodoList />,
+    title: 'University Admissions',
+    sub: 'Top Indian Universities',
+    desc: 'Expert-backed shortlisting and end-to-end admission support for leading Indian universities and online degree programmes.',
+  },
+  {
+    icon: <FcMoneyTransfer />,
+    title: 'Scholarship Guidance',
+    sub: 'Merit & Need-Based',
+    desc: 'Identify and apply for government, institutional, and private scholarships to reduce your education costs.',
+  },
+  {
+    icon: <FcBriefcase />,
+    title: 'Education Loan',
+    sub: 'EMI & No-Cost Options',
+    desc: 'Guidance on education loans with EMI support, low interest rates, and partnerships with banks and NBFCs.',
+  },
+  {
+    icon: <FcReadingEbook />,
+    title: 'Course Counseling',
+    sub: 'Right Course, Right Future',
+    desc: 'Personalised counselling to choose the best course and specialisation based on your profile, interests, and market demand.',
+  },
+  {
+    icon: <FcGraduationCap />,
+    title: 'Career Guidance',
+    sub: 'Plan Your Career Path',
+    desc: 'Strategic career planning — understand industry trends, job prospects, and the right academic path to reach your goals.',
+  },
+  {
+    icon: <FcDiploma1 />,
+    title: 'Skill Development',
+    sub: 'Industry-Ready Skills',
+    desc: 'Upskill with industry-relevant certifications in IT, digital marketing, data science, and more to boost employability.',
+  },
+  {
+    icon: <FcLibrary />,
+    title: 'Coaching & Training',
+    sub: 'Entrance & Competitive Exams',
+    desc: 'Guidance and preparation support for national and state-level entrance exams, competitive tests, and professional certifications.',
+  },
 ];
 
 function DomesticEducation() {
@@ -43,18 +88,18 @@ function DomesticEducation() {
     formData.append('entry.1225310896', form.state);
     formData.append('entry.56543812', form.highestQualification);
     formData.append('entry.971678475', form.courseLevel);
-    formData.append('entry.793595898', form.preferredCourse); // Mapping to Preferred Course
+    formData.append('entry.793595898', form.preferredCourse);
     formData.append('entry.311491193', form.preferredUniversity);
     formData.append('entry.1016125168', form.preferredIntake);
     formData.append('entry.327126680', form.startTime);
     formData.append('entry.2069343904', form.emiSupport);
     formData.append('entry.930536495', form.counselingCall);
-    formData.append('entry.1604730003', 'I Agree'); // Checkbox
+    formData.append('entry.1604730003', 'I Agree');
 
     try {
       await fetch(googleFormURL, {
         method: 'POST',
-        mode: 'no-cors', // Crucial for submitting to Google Forms from client side
+        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         },
@@ -82,23 +127,28 @@ function DomesticEducation() {
           <h1>Domestic Education with <span className="text-gradient">Rainbow Overseas</span></h1>
           <p>Complete guidance for university and college admissions across India, ensuring you find the best fit for your career aspirations.</p>
           <div className="hero-badges">
-            <span>Top Indian Universities</span>
-            <span>Entrance Exam Guidance</span>
-            <span>Scholarship Support</span>
+            <span>🎓 Admissions</span>
+            <span>📚 Coaching</span>
+            <span>💡 Career Guidance</span>
+            <span>🏅 Scholarships</span>
           </div>
         </div>
       </div>
 
+      {/* Services Grid */}
       <section className="section bg-gray">
         <div className="container">
-          <p className="section-tag center">OUR EDUCATION OFFERING</p>
-          <h2 className="section-title">Domestic Education Services</h2>
-          <div className="service-cards-grid">
-            {services.map(s => (
-              <div key={s.title} className="svc-card">
-                <div className="svc-icon">{s.icon}</div>
-                <h4>{s.title}</h4>
-                <p>{s.desc}</p>
+          <p className="section-tag center">WHAT WE OFFER</p>
+          <h2 className="section-title">Our Domestic Education Services</h2>
+          <div className="finance-services-grid">
+            {domesticServices.map(s => (
+              <div key={s.title} className="finance-svc-card">
+                <div className="finance-svc-icon">{s.icon}</div>
+                <div className="finance-svc-body">
+                  <h4>{s.title}</h4>
+                  <span className="finance-svc-sub">{s.sub}</span>
+                  <p>{s.desc}</p>
+                </div>
               </div>
             ))}
           </div>
