@@ -193,6 +193,12 @@
 }
 .country-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-bottom-color: #2563eb; }
 .country-flag { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.country-flag img {
+  width: 40px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 .country-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 .country-card p { font-size: 0.9rem; color: var(--gray-600); margin-bottom: 1.25rem; line-height: 1.7; }
 

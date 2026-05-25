@@ -4,12 +4,12 @@ import './Home.css';
 import logo from '../../public/logo.png';
 
 const countries = [
-  { name: 'USA', flag: '🇺🇸', desc: 'A melting pot of cultures and truly international opportunities hub. Home to world-class Ivy League universities.' },
-  { name: 'UK', flag: '🇬🇧', desc: 'Centuries-old universities and world-class research-based institutions. Oxford, Cambridge and more await you.' },
-  { name: 'Canada', flag: '🇨🇦', desc: 'Land of immigrants and home for Indian students for decades. Excellent post-study work visa policies.' },
-  { name: 'Australia', flag: '🇦🇺', desc: 'Top-ranked universities, post-study work visas, and student-friendly cities with high quality of life.' },
-  { name: 'Germany', flag: '🇩🇪', desc: 'A land of innovation and home to great careers. Tuition-free or low-cost education at top universities.' },
-  { name: 'Ireland', flag: '🇮🇪', desc: 'Affordable education, diverse programmes, and a unique cultural experience in the heart of Europe.' },
+  { name: 'USA', flag: '/images/flags/usa.png', desc: 'A melting pot of cultures and truly international opportunities hub. Home to world-class Ivy League universities.' },
+  { name: 'UK', flag: '/images/flags/uk.png', desc: 'Centuries-old universities and world-class research-based institutions. Oxford, Cambridge and more await you.' },
+  { name: 'Canada', flag: '/images/flags/canada.png', desc: 'Land of immigrants and home for Indian students for decades. Excellent post-study work visa policies.' },
+  { name: 'Australia', flag: '/images/flags/australia.png', desc: 'Top-ranked universities, post-study work visas, and student-friendly cities with high quality of life.' },
+  { name: 'Germany', flag: '/images/flags/germany.png', desc: 'A land of innovation and home to great careers. Tuition-free or low-cost education at top universities.' },
+  { name: 'Ireland', flag: '/images/flags/ireland.png', desc: 'Affordable education, diverse programmes, and a unique cultural experience in the heart of Europe.' },
 ];
 
 const courses = [
@@ -162,7 +162,9 @@ function Home() {
           <div className="country-grid">
             {countries.map(c => (
               <div key={c.name} className="country-card">
-                <div className="country-flag">{c.flag}</div>
+                <div className="country-flag">
+                  <img src={c.flag} alt={`${c.name} flag`} />
+                </div>
                 <h3>{c.name}</h3>
                 <p>{c.desc}</p>
                 <button className="btn btn-outline-dark btn-sm">Explore →</button>
