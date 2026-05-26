@@ -36,6 +36,9 @@ function Insurance() {
       <div className="page-hero" style={{backgroundImage:"linear-gradient(rgba(10,15,35,0.82),rgba(10,15,35,0.88)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1920&q=80')"}}>
         <div className="container">
           <p className="section-tag" style={{color:'rgba(255,255,255,0.6)'}}>INSURANCE SERVICES</p>
+          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.2)', padding: '0.4rem 1rem', borderRadius: '50px', marginBottom: '1rem', fontSize: '0.85rem', fontWeight: '600', color: '#fff', letterSpacing: '1px' }}>
+            🏆 AMFI REGISTERED MUTUAL FUND DISTRIBUTOR
+          </div>
           <h1>Protect What Matters Most with <span className="text-gradient">Right Coverage</span></h1>
           <p>Travel, health, student, and family insurance plans from top-rated insurers. Expert guidance, quick claims, best premiums.</p>
           <div className="hero-badges"><span>IRDA Authorised Advisor</span><span>Top Insurers</span><span>Quick Claims</span></div>
@@ -63,12 +66,18 @@ function Insurance() {
         <div className="container">
           <p className="section-tag center">PROTECTION FIRST</p>
           <h2 className="section-title">Peace of Mind</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?auto=format&fit=crop&w=800&q=80" alt="Family protection" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?auto=format&fit=crop&w=800&q=80" alt="Family protection" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80" alt="Health and wellness" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80" alt="Health and wellness" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+              <img src="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?auto=format&fit=crop&w=800&q=80" alt="Medical care" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+              <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Corporate insurance" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
           </div>
         </div>

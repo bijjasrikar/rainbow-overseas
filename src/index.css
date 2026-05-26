@@ -71,10 +71,7 @@ ul {
 }
 
 .text-gradient {
-  background: var(--rainbow-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #1e3a8a; /* Changed from rainbow gradient to a solid dark blue */
 }
 
 .btn {

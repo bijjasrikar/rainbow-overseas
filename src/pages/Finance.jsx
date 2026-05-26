@@ -16,6 +16,12 @@ import './ServicePage.css';
 
 const financeServices = [
   {
+    icon: <FcLineChart />,
+    title: 'Mutual Funds',
+    sub: 'SIP & Lump Sum',
+    desc: 'Goal-based mutual fund investments to build long-term wealth, save tax under 80C, and beat inflation.',
+  },
+  {
     icon: <FcBusinessman />,
     title: 'Personal Loans',
     sub: 'Fast Approval',
@@ -50,12 +56,6 @@ const financeServices = [
     title: 'Insurance Services',
     sub: 'Life, Health & General',
     desc: 'Comprehensive insurance plans — life, health, term, travel, and vehicle insurance from leading insurers across India.',
-  },
-  {
-    icon: <FcLineChart />,
-    title: 'Mutual Funds',
-    sub: 'SIP & Lump Sum',
-    desc: 'Goal-based mutual fund investments to build long-term wealth, save tax under 80C, and beat inflation.',
   },
   {
     icon: <FcBullish />,
@@ -121,6 +121,9 @@ function Finance() {
           <p className="section-tag" style={{ color: 'rgba(255,255,255,0.6)' }}>
             FINANCE SERVICES
           </p>
+          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.2)', padding: '0.4rem 1rem', borderRadius: '50px', marginBottom: '1rem', fontSize: '0.85rem', fontWeight: '600', color: '#fff', letterSpacing: '1px' }}>
+            🏆 AMFI REGISTERED MUTUAL FUND DISTRIBUTOR
+          </div>
           <h1>
             Smart Finance Solutions for{' '}
             <span className="text-gradient">Every Goal</span>
@@ -164,12 +167,18 @@ function Finance() {
         <div className="container">
           <p className="section-tag center">SECURE YOUR FUTURE</p>
           <h2 className="section-title">Financial Freedom</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Finance calculations" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Finance calculations" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80" alt="Business consultation" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80" alt="Business consultation" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+              <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=800&q=80" alt="Investment planning" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+              <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=800&q=80" alt="Mutual Funds growth" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
           </div>
         </div>

@@ -160,12 +160,18 @@ function DomesticEducation() {
         <div className="container">
           <p className="section-tag center">CAMPUS LIFE</p>
           <h2 className="section-title">Explore Indian Universities</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" alt="Students graduating" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" alt="Students graduating" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1525921429624-4f9b6c44aa9f?auto=format&fit=crop&w=800&q=80" alt="Student studying in library" style={{ width: '100%', height: '350px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1525921429624-4f9b6c44aa9f?auto=format&fit=crop&w=800&q=80" alt="Student studying in library" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+              <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80" alt="Students in discussion" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+            </div>
+            <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+              <img src="https://images.unsplash.com/photo-1571260899304-425070114f55?auto=format&fit=crop&w=800&q=80" alt="Campus building" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
           </div>
         </div>
