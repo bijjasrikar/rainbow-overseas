@@ -65,7 +65,7 @@
   bottom: 0;
   width: 50px;
   height: 2px;
-  background: var(--rainbow-gradient);
+  background: var(--primary-main);
 }
 
 .footer-col ul li {
@@ -107,7 +107,7 @@
 }
 
 .social-link:hover {
-  background: var(--rainbow-gradient);
+  background: var(--primary-main);
   transform: translateY(-3px);
 }
 

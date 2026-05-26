@@ -88,7 +88,7 @@ function Contact() {
               <div className="map-embed">
                 <iframe
                   title="Rainbow Overseas Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.31604707674!2d78.24323091201418!3d17.412608784887082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1716111234567!5m2!1sen!2sin"
+                  src="https://maps.google.com/maps?q=Rainbow+Vistas+Rock+Garden,+Kukatpally,+Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="220"
                   style={{border: 0, borderRadius: '0.75rem'}}

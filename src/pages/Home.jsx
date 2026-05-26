@@ -290,10 +290,17 @@ function Home() {
           <p className="section-tag center">TRAVEL & HOLIDAYS</p>
           <h2 className="section-title">Explore Our Holiday Packages</h2>
           <div className="travel-grid">
-            {['Domestic Tours', 'International Tours', 'Honeymoon Packages', 'Family Trips', 'Pilgrimage Tours', 'Group Tours'].map(pkg => (
-              <div key={pkg} className="travel-card">
-                <div className="travel-icon">🌐</div>
-                <h4>{pkg}</h4>
+            {[
+              { name: 'Domestic Tours', icon: '🧳' },
+              { name: 'International Tours', icon: '✈️' },
+              { name: 'Honeymoon Packages', icon: '💖' },
+              { name: 'Family Trips', icon: '🏕️' },
+              { name: 'Pilgrimage Tours', icon: '🛕' },
+              { name: 'Group Tours', icon: '🚌' }
+            ].map(pkg => (
+              <div key={pkg.name} className="travel-card">
+                <div className="travel-watermark">{pkg.icon}</div>
+                <h4>{pkg.name}</h4>
                 <p>Customised packages tailored to your budget and preferences. Book with confidence.</p>
                 <button className="btn btn-outline-dark btn-sm">Enquire →</button>
               </div>

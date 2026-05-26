@@ -480,9 +480,25 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 .travel-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-.travel-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.travel-watermark {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  font-size: 7rem;
+  line-height: 1;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  transition: var(--transition);
+}
+.travel-card:hover .travel-watermark {
+  opacity: 0.2;
+}
 .travel-card h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
 .travel-card p { font-size: 0.9rem; color: var(--gray-600); margin-bottom: 1.25rem; }
 
