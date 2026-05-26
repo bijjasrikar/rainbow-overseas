@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Home.css';
 import logo from '../../public/logo.png';
@@ -65,16 +65,32 @@ function Home() {
   const [status, setStatus] = useState('');
   const [openFaq, setOpenFaq] = useState(null);
   const [heroLoaded, setHeroLoaded] = useState(false);
+  const [visaVisible, setVisaVisible] = useState(false);
+  const visaRef = useRef(null);
 
   useEffect(() => {
     const t = setTimeout(() => setHeroLoaded(true), 300);
     return () => clearTimeout(t);
   }, []);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setVisaVisible(true); observer.disconnect(); } },
+      { threshold: 0.3 }
+    );
+    if (visaRef.current) observer.observe(visaRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   const countStudents = useCountUp(1000, 2000, heroLoaded);
-  const countVisa = useCountUp(98, 2000, heroLoaded);
+  const countVisa    = useCountUp(98, 2000, heroLoaded);
   const countCountries = useCountUp(6, 1500, heroLoaded);
-  const countYears = useCountUp(10, 1500, heroLoaded);
+  const countYears   = useCountUp(10, 1500, heroLoaded);
+
+  const visaSuccess  = useCountUp(98, 2000, visaVisible);
+  const visaProcessed = useCountUp(10, 2000, visaVisible);
+  const visaYears    = useCountUp(10, 1800, visaVisible);
+  const visaCountries = useCountUp(6, 1500, visaVisible);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -237,7 +253,7 @@ function Home() {
       </section>
 
       {/* Visa Section */}
-      <section className="section visa-section reveal-fade-left">
+      <section className="section visa-section reveal-fade-left" ref={visaRef}>
         <div className="container">
           <div className="visa-inner">
             <div>
@@ -254,10 +270,10 @@ function Home() {
               <button className="btn btn-dark" style={{marginTop:'1.5rem'}}>Get Visa Help →</button>
             </div>
             <div className="visa-stat-box">
-              <div className="visa-stat"><span>98%</span><p>Visa Success Rate</p></div>
-              <div className="visa-stat"><span>10K+</span><p>Visas Processed</p></div>
-              <div className="visa-stat"><span>10+</span><p>Years Experience</p></div>
-              <div className="visa-stat"><span>6+</span><p>Countries Covered</p></div>
+              <div className="visa-stat"><span>{visaSuccess}<span className="hero-suffix">%</span></span><p>Visa Success Rate</p></div>
+              <div className="visa-stat"><span>{visaProcessed}<span className="hero-suffix">K+</span></span><p>Visas Processed</p></div>
+              <div className="visa-stat"><span>{visaYears}<span className="hero-suffix">+</span></span><p>Years Experience</p></div>
+              <div className="visa-stat"><span>{visaCountries}<span className="hero-suffix">+</span></span><p>Countries Covered</p></div>
             </div>
           </div>
         </div>

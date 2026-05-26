@@ -33,6 +33,7 @@
 .stat strong { display: block; font-size: 2rem; font-family: var(--font-heading); color: #fff; }
 .stat span { font-size: 0.8rem; color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 1px; }
 .hero-suffix { font-size: 1.4rem; font-weight: 800; color: rgba(255,255,255,0.7); }
+.visa-stat .hero-suffix { font-size: 1.1rem; color: #1d4ed8; font-weight: 700; }
 
 .hero-form {
   background: var(--white);
