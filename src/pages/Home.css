@@ -361,10 +361,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150%;
-  height: 150%;
+  width: 90%;
+  height: 90%;
   background-image: var(--flag-url);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   opacity: 0.1;
   z-index: -1;
@@ -383,7 +384,25 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .country-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
-.country-card p { font-size: 0.9rem; color: var(--gray-600); margin-bottom: 1.25rem; line-height: 1.7; }
+.country-card p { font-size: 0.9rem; color: var(--gray-600); margin-bottom: 1rem; line-height: 1.6; }
+
+.home-country-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--gray-700);
+  margin-bottom: 0.5rem;
+  background: rgba(37, 99, 235, 0.04);
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.home-country-meta span {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
 
 /* ========== DARK SECTION ========== */
 .bg-dark-section { background: var(--primary-dark); }

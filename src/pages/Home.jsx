@@ -4,12 +4,12 @@ import './Home.css';
 import logo from '../../public/logo.png';
 
 const countries = [
-  { name: 'USA', flag: '/images/flags/usa.png', desc: 'A melting pot of cultures and truly international opportunities hub. Home to world-class Ivy League universities.' },
-  { name: 'UK', flag: '/images/flags/uk.png', desc: 'Centuries-old universities and world-class research-based institutions. Oxford, Cambridge and more await you.' },
-  { name: 'Canada', flag: '/images/flags/canada.png', desc: 'Land of immigrants and home for Indian students for decades. Excellent post-study work visa policies.' },
-  { name: 'Australia', flag: '/images/flags/australia.png', desc: 'Top-ranked universities, post-study work visas, and student-friendly cities with high quality of life.' },
-  { name: 'Germany', flag: '/images/flags/germany.png', desc: 'A land of innovation and home to great careers. Tuition-free or low-cost education at top universities.' },
-  { name: 'Ireland', flag: '/images/flags/ireland.png', desc: 'Affordable education, diverse programmes, and a unique cultural experience in the heart of Europe.' },
+  { name: 'USA', flag: '/images/flags/usa.png', desc: 'Home to world-renowned universities. Offers a vibrant campus life and unmatched career prospects.', intakes: 'Jan, Aug/Sep', avgCost: '₹25–40 Lakhs/yr', workVisa: 'OPT/H1B' },
+  { name: 'UK', flag: '/images/flags/uk.png', desc: 'UK degrees are globally respected with mostly 1-year master programmes, saving time and money.', intakes: 'Sep, Jan', avgCost: '₹20–35 Lakhs/yr', workVisa: 'PSW 2 Years' },
+  { name: 'Canada', flag: '/images/flags/canada.png', desc: 'Most preferred destination thanks to its PGWP and PR-friendly immigration pathways.', intakes: 'Jan, Sep', avgCost: '₹15–25 Lakhs/yr', workVisa: 'PGWP 3 Years' },
+  { name: 'Australia', flag: '/images/flags/australia.png', desc: 'Top-ranked universities, post-study work visas of up to 6 years, and high quality of life.', intakes: 'Feb, Jul', avgCost: '₹20–35 Lakhs/yr', workVisa: 'GTE up to 6 Years' },
+  { name: 'Germany', flag: '/images/flags/germany.png', desc: 'Offers tuition-free or very low-cost education at public universities. Land of innovation.', intakes: 'Apr/May, Oct', avgCost: '₹3–8 Lakhs/yr', workVisa: 'Job Seeker Visa' },
+  { name: 'Ireland', flag: '/images/flags/ireland.png', desc: 'Fastest growing study destination, home to European HQs of Google, Apple and Facebook.', intakes: 'Sep, Jan', avgCost: '₹15–22 Lakhs/yr', workVisa: 'Stay Back 2 Years' },
 ];
 
 const courses = [
@@ -212,7 +212,12 @@ function Home() {
                 </div>
                 <h3>{c.name}</h3>
                 <p>{c.desc}</p>
-                <button className="btn btn-outline-dark btn-sm">Explore →</button>
+                <div className="home-country-meta">
+                  <div><span>Intakes:</span> {c.intakes}</div>
+                  <div><span>Avg Cost:</span> {c.avgCost}</div>
+                  <div><span>Work Visa:</span> {c.workVisa}</div>
+                </div>
+                <button className="btn btn-outline-dark btn-sm" style={{marginTop:'1rem'}}>Explore →</button>
               </div>
             ))}
           </div>
