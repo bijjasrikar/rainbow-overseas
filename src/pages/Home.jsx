@@ -206,7 +206,7 @@ function Home() {
           <h2 className="section-title">Choose Your Dream Destination</h2>
           <div className="country-grid">
             {countries.map(c => (
-              <div key={c.name} className="country-card">
+              <div key={c.name} className="country-card" style={{ '--flag-url': `url(${c.flag})` }}>
                 <div className="country-flag">
                   <img src={c.flag} alt={`${c.name} flag`} />
                 </div>

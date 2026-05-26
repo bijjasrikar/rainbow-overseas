@@ -92,6 +92,30 @@
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.country-detail-card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  background-image: var(--flag-url);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.04;
+  z-index: -1;
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.country-detail-card:hover::before {
+  opacity: 0.08;
 }
 
 .country-detail-card:hover {

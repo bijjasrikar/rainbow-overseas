@@ -153,7 +153,7 @@ function AbroadEducation() {
           <h2 className="section-title">Countries We Specialise In</h2>
           <div className="country-detail-grid">
             {countries.map(c => (
-              <div key={c.name} className="country-detail-card">
+              <div key={c.name} className="country-detail-card" style={{ '--flag-url': `url(${c.flag})` }}>
                 <div className="cdc-header">
                   <span className="big-flag"><img src={c.flag} alt={`${c.name} flag`} /></span>
                   <h3>Study in {c.name}</h3>
