@@ -17,7 +17,7 @@ const courses = [
   { name: 'B.Tech', icon: '⚙️' }, { name: 'Computer Science', icon: '💻' },
   { name: 'Data Science', icon: '📊' }, { name: 'Artificial Intelligence', icon: '🤖' },
   { name: 'Healthcare', icon: '🏥' }, { name: 'Nursing', icon: '💊' },
-  { name: 'Cyber Security', icon: '🔒' }, { name: 'Hotel Management', icon: '🏨' },
+  { name: 'Cyber Security', icon: '🔒' },
   { name: 'Finance', icon: '💰' }, { name: 'Digital Marketing', icon: '📱' },
 ];
 
