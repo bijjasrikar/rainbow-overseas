@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Home.css';
 import logo from '../../public/logo.png';
@@ -43,10 +43,60 @@ const faqs = [
   { q: 'Can you help with travel and other needs?', a: 'Absolutely. We offer complete travel packages, travel insurance, finance solutions, and comprehensive support for all your international needs under one roof.' },
 ];
 
+const stats = [
+  { icon: '🏆', value: 10, suffix: '+', label: 'Years of Experience', color: '#2563eb' },
+  { icon: '🎓', value: 1000, suffix: '+', label: 'Students Guided', color: '#0ea5e9' },
+  { icon: '🌍', value: 20, suffix: '+', label: 'Countries Supported', color: '#6366f1' },
+  { icon: '✅', value: 98, suffix: '%', label: 'Success Rate', color: '#10b981' },
+];
+
+function useCountUp(target, duration = 2000, start = false) {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    if (!start) return;
+    let startTime = null;
+    const step = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(eased * target));
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, [start, target, duration]);
+  return count;
+}
+
+function StatCard({ icon, value, suffix, label, color, start }) {
+  const count = useCountUp(value, 2000, start);
+  return (
+    <div className="stats-card" style={{ '--accent': color }}>
+      <div className="stats-icon">{icon}</div>
+      <div className="stats-number">
+        <span className="stats-count">{count}</span>
+        <span className="stats-suffix">{suffix}</span>
+      </div>
+      <div className="stats-label">{label}</div>
+      <div className="stats-bar"><div className="stats-bar-fill" style={{ width: start ? '100%' : '0%' }} /></div>
+    </div>
+  );
+}
+
 function Home() {
   const [formData, setFormData] = useState({ name: '', mobile: '', service: '' });
   const [status, setStatus] = useState('');
   const [openFaq, setOpenFaq] = useState(null);
+  const [statsVisible, setStatsVisible] = useState(false);
+  const statsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setStatsVisible(true); observer.disconnect(); } },
+      { threshold: 0.3 }
+    );
+    if (statsRef.current) observer.observe(statsRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -150,6 +200,21 @@ function Home() {
                 <div className="big-label">Students Placed Globally</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Animated Stats Counter */}
+      <section className="stats-section reveal-zoom-in" ref={statsRef}>
+        <div className="stats-bg-overlay" />
+        <div className="container">
+          <p className="section-tag center" style={{ color: 'rgba(255,255,255,0.7)' }}>BY THE NUMBERS</p>
+          <h2 className="section-title" style={{ color: 'white', textAlign: 'center' }}>Our Impact in Numbers</h2>
+          <p className="stats-subtitle">A decade of trust, thousands of dreams fulfilled, and a commitment to excellence that never stops.</p>
+          <div className="stats-grid">
+            {stats.map((s) => (
+              <StatCard key={s.label} {...s} start={statsVisible} />
+            ))}
           </div>
         </div>
       </section>
