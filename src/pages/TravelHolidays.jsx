@@ -154,7 +154,7 @@ function TravelHolidays() {
       </div>
 
       {/* Services Grid */}
-      <section className="section travel-services-section">
+      <section className="section travel-services-section reveal-fade-left">
         <div className="container">
           <p className="section-tag center">WHAT WE OFFER</p>
           <h2 className="section-title">Our Travel Services</h2>
@@ -174,7 +174,7 @@ function TravelHolidays() {
       </section>
 
       {/* Travel Gallery */}
-      <section className="section bg-white">
+      <section className="section bg-white reveal-zoom-in">
         <div className="container">
           <p className="section-tag center">WANDERLUST</p>
           <h2 className="section-title">Explore Beautiful Destinations</h2>
@@ -222,7 +222,7 @@ function TravelHolidays() {
       </section>
 
       {/* Enquiry Form */}
-      <section className="section enquiry-section">
+      <section className="section enquiry-section reveal-fade-right">
         <div className="container">
           <div className="enquiry-inner">
             <div className="enquiry-text">

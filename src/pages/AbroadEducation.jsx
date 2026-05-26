@@ -90,7 +90,7 @@ function AbroadEducation() {
 
   return (
     <div className="service-page">
-      <div className="page-hero" style={{backgroundImage: "linear-gradient(rgba(10,15,35,0.82),rgba(10,15,35,0.88)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=80')"}}>
+      <div className="page-hero" style={{backgroundImage: "linear-gradient(rgba(10,15,35,0.82),rgba(10,15,35,0.88)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80')"}}>
         <div className="container">
           <p className="section-tag" style={{color:'rgba(255,255,255,0.6)'}}>ABROAD EDUCATION SERVICES</p>
           <h1>Study Abroad with <span className="text-gradient">Rainbow Overseas</span></h1>
@@ -105,7 +105,7 @@ function AbroadEducation() {
       </div>
 
       {/* Services Grid */}
-      <section className="section bg-gray">
+      <section className="section bg-gray reveal-fade-left">
         <div className="container">
           <p className="section-tag center">WHAT WE OFFER</p>
           <h2 className="section-title">Our Abroad Education Services</h2>
@@ -125,7 +125,7 @@ function AbroadEducation() {
       </section>
 
       {/* Student Gallery */}
-      <section className="section bg-white">
+      <section className="section bg-white reveal-zoom-in">
         <div className="container">
           <p className="section-tag center">STUDENT LIFE</p>
           <h2 className="section-title">Experience Global Education</h2>
@@ -147,7 +147,7 @@ function AbroadEducation() {
       </section>
 
       {/* Countries */}
-      <section className="section bg-gray">
+      <section className="section bg-gray reveal-fade-right">
         <div className="container">
           <p className="section-tag center">DESTINATIONS</p>
           <h2 className="section-title">Countries We Specialise In</h2>

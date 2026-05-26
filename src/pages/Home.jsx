@@ -155,7 +155,7 @@ function Home() {
       </section>
 
       {/* Study Destinations */}
-      <section className="section countries-section">
+      <section className="section countries-section reveal-fade-left">
         <div className="container">
           <p className="section-tag center">STUDY ABROAD</p>
           <h2 className="section-title">Choose Your Dream Destination</h2>
@@ -175,7 +175,7 @@ function Home() {
       </section>
 
       {/* Popular Courses */}
-      <section className="section bg-dark-section">
+      <section className="section bg-dark-section reveal-zoom-in">
         <div className="container">
           <p className="section-tag center" style={{color:'rgba(255,255,255,0.6)'}}>COURSES WE OFFER</p>
           <h2 className="section-title" style={{color:'white'}}>Popular Courses Abroad</h2>
@@ -191,7 +191,7 @@ function Home() {
       </section>
 
       {/* Top Universities */}
-      <section className="section">
+      <section className="section reveal-fade-right">
         <div className="container">
           <p className="section-tag center">PARTNER INSTITUTIONS</p>
           <h2 className="section-title">Top Universities We Work With</h2>
@@ -208,7 +208,7 @@ function Home() {
       </section>
 
       {/* Visa Section */}
-      <section className="section visa-section">
+      <section className="section visa-section reveal-fade-left">
         <div className="container">
           <div className="visa-inner">
             <div>
@@ -235,7 +235,7 @@ function Home() {
       </section>
 
       {/* Travel & Holidays Teaser */}
-      <section className="section travel-teaser">
+      <section className="section travel-teaser reveal-zoom-in">
         <div className="container">
           <p className="section-tag center">TRAVEL & HOLIDAYS</p>
           <h2 className="section-title">Explore Our Holiday Packages</h2>
@@ -253,7 +253,7 @@ function Home() {
       </section>
 
       {/* Forex & Insurance */}
-      <section className="section bg-dark-section">
+      <section className="section bg-dark-section reveal-fade-left">
         <div className="container">
           <div className="forex-ins-grid">
             <div className="forex-ins-card">
@@ -297,7 +297,7 @@ function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="section">
+      <section className="section reveal-zoom-in">
         <div className="container">
           <p className="section-tag center">STUDENT STORIES</p>
           <h2 className="section-title">What Our Students Say</h2>
@@ -320,7 +320,7 @@ function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="section faq-section">
+      <section className="section faq-section reveal-fade-right">
         <div className="container">
           <p className="section-tag center">FAQs</p>
           <h2 className="section-title">Frequently Asked Questions</h2>

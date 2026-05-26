@@ -121,7 +121,7 @@ function DomesticEducation() {
 
   return (
     <div className="service-page">
-      <div className="page-hero" style={{backgroundImage: "linear-gradient(rgba(10,15,35,0.82),rgba(10,15,35,0.88)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80')"}}>
+      <div className="page-hero" style={{backgroundImage: "linear-gradient(rgba(10,15,35,0.82),rgba(10,15,35,0.88)), url('https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1920&q=80')"}}>
         <div className="container">
           <p className="section-tag" style={{color:'rgba(255,255,255,0.6)'}}>DOMESTIC EDUCATION</p>
           <h1>Domestic Education with <span className="text-gradient">Rainbow Overseas</span></h1>
@@ -136,7 +136,7 @@ function DomesticEducation() {
       </div>
 
       {/* Services Grid */}
-      <section className="section bg-gray">
+      <section className="section bg-gray reveal-fade-right">
         <div className="container">
           <p className="section-tag center">WHAT WE OFFER</p>
           <h2 className="section-title">Our Domestic Education Services</h2>
@@ -156,29 +156,29 @@ function DomesticEducation() {
       </section>
 
       {/* Campus Life Gallery */}
-      <section className="section bg-white">
+      <section className="section bg-white reveal-zoom-in">
         <div className="container">
           <p className="section-tag center">CAMPUS LIFE</p>
           <h2 className="section-title">Explore Indian Universities</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" alt="Students graduating" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=800&q=80" alt="Students in library" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1525921429624-4f9b6c44aa9f?auto=format&fit=crop&w=800&q=80" alt="Student studying in library" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="Classroom lecture" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80" alt="Students in discussion" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80" alt="School building" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1571260899304-425070114f55?auto=format&fit=crop&w=800&q=80" alt="Campus building" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80" alt="College students" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
           </div>
         </div>
       </section>
 
       {/* Enquiry Form */}
-      <section className="section enquiry-section">
+      <section className="section enquiry-section reveal-fade-left">
         <div className="container">
           <div className="enquiry-inner">
             <div className="enquiry-text">

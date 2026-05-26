@@ -45,7 +45,7 @@ function Insurance() {
         </div>
       </div>
 
-      <section className="section">
+      <section className="section reveal-fade-left">
         <div className="container">
           <p className="section-tag center">OUR PLANS</p>
           <h2 className="section-title">Insurance Plans We Offer</h2>
@@ -62,7 +62,7 @@ function Insurance() {
       </section>
 
       {/* Insurance Gallery */}
-      <section className="section bg-white">
+      <section className="section bg-white reveal-zoom-in">
         <div className="container">
           <p className="section-tag center">PROTECTION FIRST</p>
           <h2 className="section-title">Peace of Mind</h2>
@@ -83,7 +83,7 @@ function Insurance() {
         </div>
       </section>
 
-      <section className="section enquiry-section">
+      <section className="section enquiry-section reveal-fade-right">
         <div className="container">
           <div className="enquiry-inner">
             <div className="enquiry-text">

@@ -42,7 +42,7 @@ function About() {
       </div>
 
       {/* Mission */}
-      <section className="section">
+      <section className="section reveal-fade-left">
         <div className="container">
           <div className="about-mission">
             <div className="mission-text">
@@ -63,7 +63,7 @@ function About() {
       </section>
 
       {/* Values */}
-      <section className="section bg-gray">
+      <section className="section bg-gray reveal-fade-right">
         <div className="container">
           <p className="section-tag center">WHAT WE STAND FOR</p>
           <h2 className="section-title">Our Core Values</h2>
@@ -80,7 +80,7 @@ function About() {
       </section>
 
       {/* Timeline */}
-      <section className="section">
+      <section className="section reveal-zoom-in">
         <div className="container">
           <p className="section-tag center">OUR JOURNEY</p>
           <h2 className="section-title">10 Years of Excellence</h2>
@@ -98,7 +98,7 @@ function About() {
       </section>
 
       {/* Team */}
-      <section className="section bg-gray">
+      <section className="section bg-gray reveal-fade-left">
         <div className="container">
           <p className="section-tag center">OUR TEAM</p>
           <h2 className="section-title">The People Behind Rainbow Overseas</h2>

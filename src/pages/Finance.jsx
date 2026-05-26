@@ -142,13 +142,12 @@ function Finance() {
         </div>
       </div>
 
-      {/* Services Grid */}
-      <section className="section">
+      <section className="section bg-gray reveal-fade-left">
         <div className="container">
-          <p className="section-tag center">OUR FINANCE OFFERINGS</p>
-          <h2 className="section-title">10 Finance Services Under One Roof</h2>
+          <p className="section-tag center">WHAT WE OFFER</p>
+          <h2 className="section-title">Our Financial Services</h2>
           <div className="finance-services-grid">
-            {financeServices.map((s) => (
+            {financeServices.map(s => (
               <div key={s.title} className="finance-svc-card">
                 <div className="finance-svc-icon">{s.icon}</div>
                 <div className="finance-svc-body">
@@ -163,22 +162,22 @@ function Finance() {
       </section>
 
       {/* Finance Gallery */}
-      <section className="section bg-white">
+      <section className="section bg-white reveal-zoom-in">
         <div className="container">
-          <p className="section-tag center">SECURE YOUR FUTURE</p>
-          <h2 className="section-title">Financial Freedom</h2>
+          <p className="section-tag center">FINANCIAL FREEDOM</p>
+          <h2 className="section-title">Secure Your Future</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Finance calculations" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=800&q=80" alt="Financial planning" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80" alt="Business consultation" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80" alt="Investment growth" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=800&q=80" alt="Investment planning" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Business consultation" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=800&q=80" alt="Mutual Funds growth" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+              <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" alt="Digital finance" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
           </div>
         </div>
