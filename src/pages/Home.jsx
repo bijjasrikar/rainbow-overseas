@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import './Home.css';
 import logo from '../../public/logo.webp';
 import AbroadEnquiryModal from '../components/AbroadEnquiryModal';
+import TravelEnquiryModal from '../components/TravelEnquiryModal';
 
 const countries = [
   { name: 'United States of America', shortName: 'USA', flag: '/images/flags/usa.svg', landmark: '/images/landmarks/usa.png', desc: 'Home to world-renowned universities. Offers a vibrant campus life and unmatched career prospects.', intakes: 'Jan, Aug/Sep', avgCost: '₹25–40 Lakhs/yr', workVisa: 'OPT/H1B' },
@@ -69,6 +70,8 @@ function Home() {
   const [visaVisible, setVisaVisible] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalCountry, setModalCountry] = useState('');
+  const [travelModalOpen, setTravelModalOpen] = useState(false);
+  const [travelModalService, setTravelModalService] = useState('');
   const visaRef = useRef(null);
 
   useEffect(() => {
@@ -331,7 +334,15 @@ function Home() {
                 <div className="travel-watermark">{pkg.icon}</div>
                 <h4>{pkg.name}</h4>
                 <p>Customised packages tailored to your budget and preferences. Book with confidence.</p>
-                <button className="btn btn-outline-dark btn-sm">Enquire →</button>
+                <button 
+                  className="btn btn-outline-dark btn-sm"
+                  onClick={() => {
+                    setTravelModalService(pkg.name);
+                    setTravelModalOpen(true);
+                  }}
+                >
+                  Enquire →
+                </button>
               </div>
             ))}
           </div>
@@ -441,6 +452,11 @@ function Home() {
       isOpen={modalOpen} 
       onClose={() => setModalOpen(false)} 
       defaultCountry={modalCountry} 
+    />
+    <TravelEnquiryModal
+      isOpen={travelModalOpen}
+      onClose={() => setTravelModalOpen(false)}
+      defaultService={travelModalService}
     />
     </div>
   );
