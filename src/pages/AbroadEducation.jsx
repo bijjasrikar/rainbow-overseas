@@ -90,7 +90,7 @@ function AbroadEducation() {
 
   return (
     <div className="service-page">
-      <div className="page-hero" style={{backgroundImage: "linear-gradient(rgba(10,15,35,0.82),rgba(10,15,35,0.88)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80')"}}>
+      <div className="page-hero" style={{backgroundImage: "linear-gradient(rgba(10,15,35,0.82),rgba(10,15,35,0.88)), url('/images/education.jpeg')"}}>
         <div className="container">
           <p className="section-tag" style={{color:'rgba(255,255,255,0.6)'}}>ABROAD EDUCATION SERVICES</p>
           <h1>Study Abroad with <span className="text-gradient">Rainbow Overseas</span></h1>
@@ -131,7 +131,7 @@ function AbroadEducation() {
           <h2 className="section-title">Experience Global Education</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" alt="Male student studying abroad" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+              <img src="/images/education2.jpeg" alt="Male student studying abroad" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
               <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Female student studying abroad" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />

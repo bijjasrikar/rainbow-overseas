@@ -128,7 +128,7 @@ function TravelHolidays() {
         className="page-hero"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(10,15,35,0.78),rgba(10,15,35,0.88)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80')",
+            "linear-gradient(rgba(10,15,35,0.78),rgba(10,15,35,0.88)), url('/images/travel.jpeg')",
         }}
       >
         <div className="container">
@@ -180,7 +180,7 @@ function TravelHolidays() {
           <h2 className="section-title">Explore Beautiful Destinations</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80" alt="Airplane flight" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
+              <img src="/images/travel1.png" alt="Airplane flight" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
               <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80" alt="Beautiful landscape" style={{ width: '100%', height: '280px', objectFit: 'cover', display: 'block' }} />
