@@ -14,13 +14,24 @@
 
 .enquiry-modal-content {
   background: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   width: 90%;
-  max-width: 800px;
+  max-width: 650px;
+  max-height: 90vh;
   position: relative;
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
   animation: modal-pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.enquiry-modal-content .enquiry-form {
+  padding: 0;
+  box-shadow: none;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 @keyframes modal-pop {
@@ -46,6 +57,13 @@
 }
 
 /* Custom scrollbar for modal */
+.modal-scrollable-grid {
+  overflow-y: auto;
+  max-height: 60vh;
+  padding-right: 10px;
+  padding-bottom: 1rem;
+}
+
 .modal-scrollable-grid::-webkit-scrollbar {
   width: 6px;
 }
