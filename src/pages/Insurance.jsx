@@ -36,12 +36,9 @@ function Insurance() {
       <div className="page-hero" style={{backgroundImage:"linear-gradient(rgba(10,15,35,0.82),rgba(10,15,35,0.88)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1920&q=80')"}}>
         <div className="container">
           <p className="section-tag" style={{color:'rgba(255,255,255,0.6)'}}>INSURANCE SERVICES</p>
-          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.2)', padding: '0.4rem 1rem', borderRadius: '50px', marginBottom: '1rem', fontSize: '0.85rem', fontWeight: '600', color: '#fff', letterSpacing: '1px' }}>
-            🏆 AMFI REGISTERED MUTUAL FUND DISTRIBUTOR
-          </div>
           <h1>Protect What Matters Most with <span className="text-gradient">Right Coverage</span></h1>
           <p>Travel, health, student, and family insurance plans from top-rated insurers. Expert guidance, quick claims, best premiums.</p>
-          <div className="hero-badges"><span>IRDA Authorised Advisor</span><span>Top Insurers</span><span>Quick Claims</span></div>
+          <div className="hero-badges"><span>🏆 AMFI REGISTERED MUTUAL FUND DISTRIBUTOR</span><span>IRDA Authorised Advisor</span><span>Top Insurers</span><span>Quick Claims</span></div>
         </div>
       </div>
 
