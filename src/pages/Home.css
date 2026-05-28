@@ -1,7 +1,7 @@
 /* ========== HERO ========== */
 .hero {
   background: linear-gradient(rgba(10, 15, 35, 0.85), rgba(10, 15, 35, 0.92)),
-    url('/images/hero.png') center/cover no-repeat;
+    url('/images/hero.webp') center/cover no-repeat;
   padding: 6rem 0 5rem;
   color: var(--white);
 }
@@ -328,7 +328,7 @@
 .feature-item { background: var(--gray-50); padding: 0.6rem 1rem; border-radius: var(--radius-md); font-size: 0.9rem; font-weight: 500; }
 .about-img-placeholder { flex: 0 0 300px; }
 .about-img-box {
-  background: linear-gradient(rgba(10, 15, 35, 0.6), rgba(10, 15, 35, 0.7)), url('/images/about.png') center/cover no-repeat;
+  background: linear-gradient(rgba(10, 15, 35, 0.6), rgba(10, 15, 35, 0.7)), url('/images/about.webp') center/cover no-repeat;
   border-radius: var(--radius-xl);
   height: 300px;
   display: flex;
