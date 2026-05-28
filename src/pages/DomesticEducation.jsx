@@ -121,7 +121,7 @@ function DomesticEducation() {
 
   return (
     <div className="service-page">
-      <div className="page-hero" style={{backgroundImage: "linear-gradient(rgba(10,15,35,0.82),rgba(10,15,35,0.88)), url('/images/education1.jpeg')"}}>
+      <div className="page-hero" style={{backgroundImage: "linear-gradient(rgba(10,15,35,0.82),rgba(10,15,35,0.88)), url('/images/education1.jpeg')", backgroundPosition: "center 20%"}}>
         <div className="container">
           <p className="section-tag" style={{color:'rgba(255,255,255,0.6)'}}>DOMESTIC EDUCATION</p>
           <h1>Domestic Education with <span className="text-gradient">Rainbow Overseas</span></h1>
