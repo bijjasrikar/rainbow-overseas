@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
 import './StickyButtons.css';
 
 function StickyButtons() {
@@ -14,14 +15,14 @@ function StickyButtons() {
         className="sticky-btn whatsapp-btn"
         title="Chat on WhatsApp"
       >
-        💬
+        <FaWhatsapp size={24} />
       </a>
       <a 
         href={`tel:${phoneNumber}`} 
         className="sticky-btn call-btn"
         title="Call us"
       >
-        ☎️
+        <FaPhoneAlt size={22} />
       </a>
     </div>
   );
